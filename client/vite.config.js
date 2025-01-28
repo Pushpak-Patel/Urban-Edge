@@ -17,4 +17,13 @@ export default defineConfig({
       external: ['react', 'react-dom'],
     },
   },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+  esbuild: {
+    jsx: 'automatic',
+  },
+
 });
